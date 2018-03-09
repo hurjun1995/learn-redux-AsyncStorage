@@ -1,9 +1,11 @@
 import { combineReducers } from 'redux';
 
-import dataReducer from './dataReducer';
+import homeReducer from './homeReducer';
+import quoteReducer from './quoteReducer';
 
 const rootReducer = combineReducers({
-    dataReducer
+    homeReducer,
+    quoteReducer,
     // ,[ANOTHER REDUCER], [ANOTHER REDUCER] ....
 })
 

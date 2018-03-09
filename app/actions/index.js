@@ -1,2 +1,2 @@
-export * from './dataActions';
+export * from './homeActions';
 export * from './quotesActions';

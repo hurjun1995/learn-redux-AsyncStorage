@@ -1,8 +1,8 @@
 import { DATA_AVAILABLE } from "../actions/types" // Import the actions types constant we defined in our actions
 
-let dataState = { data: [], loading: true};
+let initialState = { data: [], loading: true};
 
-const dataReducer = (state = dataState, action) => {
+const homeReducer = (state = initialState, action) => {
     switch (action.type) {
         case DATA_AVAILABLE:
             state = Object.assign({}, state, { data: action.data, loading: false});
@@ -11,3 +11,5 @@ const dataReducer = (state = dataState, action) => {
             return state;
     };
 }
+
+export default homeReducer;

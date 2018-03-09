@@ -1,6 +1,6 @@
 import { DATA_AVAILABLE } from './types';
 
-// Importt the sample data
+// Import the sample data
 import Data from '../instructions.json';
 
 export function getData() {
